@@ -27,7 +27,7 @@ require("lazy").setup({
 
 
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = { "vimdoc", "rust", "c", "lua", "markdown", "markdown_inline", "javascript", "typescript"},
+	ensure_installed = { "vimdoc", "rust", "c", "lua", "markdown", "markdown_inline", "javascript", "typescript", "gleam"},
 	highlight = {
 		enable = true,
 	}
