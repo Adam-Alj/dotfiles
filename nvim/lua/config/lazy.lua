@@ -90,7 +90,7 @@ vim.opt.wrap = false
 
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.statuscolumn = "%l-%r%=| "
+vim.opt.statuscolumn = '%{v.lnum}'
 
 vim.o.termguicolors = true
 
