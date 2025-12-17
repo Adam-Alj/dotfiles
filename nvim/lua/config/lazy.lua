@@ -15,8 +15,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local TreeSitter = require("treesitter")
-local BlinkCompletions = require("blink-completions")
+local TreeSitter = require("config.treesitter")
+local BlinkCompletions = require("config.blink-completions")
 
 -- Setup lazy.nvim
 require("lazy").setup({
