@@ -9,7 +9,8 @@ local languages = {
  "markdown_inline",
  "javascript", 
  "typescript", 
- "gleam"
+ "gleam",
+ "bash"
 }
 
 TreeSitter.config = {
