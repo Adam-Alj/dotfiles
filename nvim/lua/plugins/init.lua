@@ -17,12 +17,14 @@ vim.opt.rtp:prepend(lazypath)
 
 local TreeSitter = require("plugins.treesitter")
 local BlinkCompletions = require("plugins.blink-completions")
+local FZFLua = require("plugins.fzf-lua")
 
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
 	TreeSitter.config,
-	BlinkCompletions.config
+	BlinkCompletions.config,
+	FZFLua.config
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
@@ -30,4 +32,6 @@ require("lazy").setup({
 })
 
 TreeSitter.postRegister()
+FZFLua.postRegister()
+
 

@@ -61,9 +61,11 @@ hl("@variable.builtin", { fg = colors.red })
 -- Operators/Delimiters 
 hl("Operator", { fg = colors.cyan })
 hl("@operator", { fg = colors.cyan })
-hl("Delimiter", { fg = colors.light_black }) 
+hl("Delimiter", { fg = colors.light_black })
 hl("@punctuation", { fg = colors.mist})
 
-hl("Special", { fg = colors.cyan }) 
+hl("Special", { fg = colors.cyan })
 hl("Error", { fg = colors.red, bold = true })
 hl("Todo", { bg = colors.yellow, fg = colors.dull_black, bold = true })
+
+hl("DiagnosticUnnecessary", { underline = true, sp = colors.sage_green})
